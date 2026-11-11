@@ -6,7 +6,7 @@
 
 ---
 
-When your FPS drops, Smeariom looks at what's around you — big mob farms, piles of dropped items, mobs stuck in caves — and fixes that. It stops drawing them, lowers your view distance a little, and cuts down particles, clouds and shadows. Once your FPS is back to normal, it puts everything back the way it was.
+Smeariom keeps an eye on your FPS. When it drops, it checks what’s near you, like big mob farms, piles of dropped items, or mobs stuck underground, and stops rendering them. It also turns down your view distance a bit, plus particles, clouds and shadows. When your FPS is back to normal it puts it all back.
 
 Mobs close to you always stay visible, and your settings are always restored when you leave a world.
 
