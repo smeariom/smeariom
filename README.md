@@ -6,7 +6,7 @@
 
 ---
 
-Smeariom keeps an eye on your FPS. When it drops, it checks what’s near you, like big mob farms, piles of dropped items, or mobs stuck underground, and stops rendering them. It also turns down your view distance a bit, plus particles, clouds and shadows. When your FPS is back to normal it puts it all back.
+Smeariom keeps an eye on your FPS. When it drops, it checks what's near you, like big mob farms, piles of dropped items, or mobs stuck underground, and stops rendering them. It also turns down your view distance a bit, plus particles, clouds and shadows. When your FPS is back to normal it puts it all back.
 
 Mobs close to you always stay visible, and your settings are always restored when you leave a world.
 
@@ -36,9 +36,13 @@ Client-side only, so it works on any server, vanilla included.
 
 ## Settings
 
-Open them with **Mods → Smeariom** in the mod menu, or type `/smeariom` in chat.
+Press **Right Shift** in a world, open **Mods → Smeariom** in the mod menu, or type `/smeariom` in chat.
 
 ![Overview](overview.png)
+
+Click any module to change how it works.
+
+![Module settings](panel.png)
 
 ![HUD](hud.png)
 
