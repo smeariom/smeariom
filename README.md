@@ -18,8 +18,8 @@ Grab the jar for your Minecraft version from the [**Releases**](../../releases) 
 
 | Minecraft | File |
 |---|---|
-| 26.2 | `smeariom-1.0.0+26.2.jar` |
-| 1.21.11 | `smeariom-1.0.0+1.21.11.jar` |
+| 26.2 | `smeariom-1.0.1+26.2.jar` |
+| 1.21.11 | `smeariom-1.0.1+1.21.11.jar` |
 
 You also need [Fabric Loader](https://fabricmc.net/use/) and [Fabric API](https://modrinth.com/mod/fabric-api). [Mod Menu](https://modrinth.com/mod/modmenu) is optional.
 
