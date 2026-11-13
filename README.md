@@ -14,6 +14,8 @@ Mobs close to you always stay visible, and your settings are always restored whe
 
 ## Download
 
+Latest version: **1.0.2**
+
 Grab the jar for your Minecraft version from the [**Releases**](../../releases) page:
 
 | Minecraft | File |
