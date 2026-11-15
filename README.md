@@ -2,7 +2,7 @@
 
 <h1 align="center">Smeariom</h1>
 
-<p align="center">A Fabric mod that watches your FPS and smooths out lag automatically.</p>
+<p align="center">A Minecraft mod that watches your FPS and smooths out lag automatically.<br>Fabric for 26.2 and 1.21.11, Forge for 1.8.9.</p>
 
 ---
 
@@ -18,14 +18,23 @@ Latest version: **1.0.2**
 
 Grab the jar for your Minecraft version from the [**Releases**](../../releases) page:
 
-| Minecraft | File |
-|---|---|
-| 26.2 | `smeariom-1.0.2+26.2.jar` |
-| 1.21.11 | `smeariom-1.0.2+1.21.11.jar` |
+| Minecraft | Loader | File |
+|---|---|---|
+| 26.2 | Fabric | `smeariom-1.0.2+26.2.jar` |
+| 1.21.11 | Fabric | `smeariom-1.0.2+1.21.11.jar` |
+| 1.8.9 | Forge | `smeariom-1.0.2+1.8.9.jar` |
 
-You also need [Fabric Loader](https://fabricmc.net/use/) and [Fabric API](https://modrinth.com/mod/fabric-api). [Mod Menu](https://modrinth.com/mod/modmenu) is optional.
+**26.2 and 1.21.11:** you also need [Fabric Loader](https://fabricmc.net/use/) and [Fabric API](https://modrinth.com/mod/fabric-api). [Mod Menu](https://modrinth.com/mod/modmenu) is optional.
+
+**1.8.9:** you need [Minecraft Forge](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.8.9.html) for 1.8.9. Nothing else.
 
 Client-side only, so it works on any server, vanilla included.
+
+## Install
+
+1. Install Fabric Loader (26.2 / 1.21.11) or Forge (1.8.9) for your Minecraft version.
+2. Put the Smeariom jar in your `mods` folder. On Fabric, put Fabric API there too.
+3. Start the game with the Fabric or Forge profile.
 
 ## Features
 
@@ -38,7 +47,7 @@ Client-side only, so it works on any server, vanilla included.
 
 ## Settings
 
-Press **Right Shift** in a world, open **Mods → Smeariom** in the mod menu, or type `/smeariom` in chat.
+Press **Right Shift** in a world or type `/smeariom` in chat. On Fabric you can also open **Mods → Smeariom** in Mod Menu.
 
 ![Overview](overview.png)
 
@@ -50,7 +59,7 @@ Click any module to change how it works.
 
 ## Bug reports
 
-Found a problem? Open an [issue](../../issues) and include your `logs/latest.log` file.
+Found a problem? Open an [issue](../../issues), say which Minecraft version and loader you're on, and include your `logs/latest.log` file.
 
 ## Credits
 
