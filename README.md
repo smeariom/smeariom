@@ -1,66 +1,69 @@
-<p align="center"><img src="icon.png" width="96" alt="Smeariom icon"></p>
+<p align="center"><img src="docs/icon.png" width="96" alt="Smeariom icon"></p>
 
 <h1 align="center">Smeariom</h1>
 
-<p align="center">A Minecraft mod that watches your FPS and smooths out lag automatically.<br>Fabric for 26.2 and 1.21.11, Forge for 1.8.9.</p>
+<p align="center">A Fabric mod that watches your FPS and smooths out lag automatically.</p>
 
 ---
 
-Smeariom keeps an eye on your FPS. When it drops, it checks what's near you, like big mob farms, piles of dropped items, or mobs stuck underground, and stops rendering them. It also turns down your view distance a bit, plus particles, clouds and shadows. When your FPS is back to normal it puts it all back.
+When your FPS drops, Smeariom looks at what's around you (big mob farms, piles of dropped items, mobs stuck in caves) and fixes that: it stops drawing them, lowers your view distance a bit, and cuts down particles, clouds and shadows. Once your FPS is back to normal, it puts everything back the way it was.
 
 Mobs close to you always stay visible, and your settings are always restored when you leave a world.
 
-![Settings](settings.png)
+![Settings](docs/settings.png)
 
 ## Download
 
-Latest version: **1.0.2**
+Grab the jar for your Minecraft version from the [Releases](../../releases) page:
 
-Grab the jar for your Minecraft version from the [**Releases**](../../releases) page:
+| Minecraft | File |
+|---|---|
+| 26.3 | `smeariom-1.0.3+26.3.jar` |
+| 26.2 | `smeariom-1.0.3+26.2.jar` |
+| 1.21.11 | `smeariom-1.0.3+1.21.11.jar` |
 
-| Minecraft | Loader | File |
-|---|---|---|
-| 26.2 | Fabric | `smeariom-1.0.2+26.2.jar` |
-| 1.21.11 | Fabric | `smeariom-1.0.2+1.21.11.jar` |
-| 1.8.9 | Forge | `smeariom-1.0.2+1.8.9.jar` |
+You also need [Fabric Loader](https://fabricmc.net/use/) and [Fabric API](https://modrinth.com/mod/fabric-api). [Mod Menu](https://modrinth.com/mod/modmenu) is optional.
 
-**26.2 and 1.21.11:** you also need [Fabric Loader](https://fabricmc.net/use/) and [Fabric API](https://modrinth.com/mod/fabric-api). [Mod Menu](https://modrinth.com/mod/modmenu) is optional.
-
-**1.8.9:** you need [Minecraft Forge](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.8.9.html) for 1.8.9. Nothing else.
-
-Client-side only, so it works on any server, vanilla included.
-
-## Install
-
-1. Install Fabric Loader (26.2 / 1.21.11) or Forge (1.8.9) for your Minecraft version.
-2. Put the Smeariom jar in your `mods` folder. On Fabric, put Fabric API there too.
-3. Start the game with the Fabric or Forge profile.
-
-## Features
-
-- Finds mob crowds, item piles and mobs hidden underground, and stops drawing them while you're lagging
-- Temporarily lowers view distance and entity distance, and turns off clouds and shadows
-- Thins out particles
-- Optional always-on entity culling and particle limit
-- FPS badge, FPS graph and status messages
-- Puts every change back automatically once your FPS is steady
+Client-side only, so it works on any server.
 
 ## Settings
 
-Press **Right Shift** in a world or type `/smeariom` in chat. On Fabric you can also open **Mods → Smeariom** in Mod Menu.
+Open them with **Mods → Smeariom**, or type `/smeariom` in chat.
 
-![Overview](overview.png)
+**Detection:** FPS threshold, scan radius, auto-restore.
+**Smoothing (only while lagging):** view distance, entity distance, mob crowds, item piles, far players, particles, clouds, shadows, biome blend.
+**Always on (optional):** entity culling past a set distance, particle limit, minimal particles.
+**Visibility (optional):** hide nametags, armor stands, item frames, XP orbs, arrows.
+**HUD:** FPS badge, FPS graph, status messages.
 
-Click any module to change how it works.
+## Commands
 
-![Module settings](panel.png)
+`/smeariom` opens the settings. It also takes:
 
-![HUD](hud.png)
+| Command | Does |
+|---|---|
+| `/smeariom on` / `off` | Enable or disable the mod |
+| `/smeariom scan` | Run a lag scan right now |
+| `/smeariom restore` | Put every tweaked setting back immediately |
+| `/smeariom reload` | Re-read the config file from disk |
+| `/smeariom status` | Show current FPS and what's being smoothed |
 
-## Bug reports
+![Overview](docs/overview.png)
 
-Found a problem? Open an [issue](../../issues), say which Minecraft version and loader you're on, and include your `logs/latest.log` file.
+![HUD](docs/hud.png)
+
+## Building
+
+Each Minecraft version has its own folder. From inside one:
+
+```
+gradlew build
+```
+
+The jar ends up in `build/libs`. 1.21.11 needs Java 21; 26.2 and 26.3 need Java 25.
 
 ## Credits
 
-Based on Autoptimization by XLTQ, used under the MIT License. Rewritten with working entity hiding, safer threading and new features.
+Based on Autoptimization by XLTQ (MIT). Rewritten with working entity hiding, safer threading and new features.
+
+Licensed under MIT.
