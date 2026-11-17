@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/icon.png" width="96" alt="Smeariom icon"></p>
+<p align="center"><img src="icon.png" width="96" alt="Smeariom icon"></p>
 
 <h1 align="center">Smeariom</h1>
 
@@ -10,7 +10,7 @@ When your FPS drops, Smeariom looks at what's around you (big mob farms, piles o
 
 Mobs close to you always stay visible, and your settings are always restored when you leave a world.
 
-![Settings](docs/settings.png)
+![Settings](settings.png)
 
 ## Download
 
@@ -48,9 +48,9 @@ Open them with **Mods → Smeariom**, or type `/smeariom` in chat.
 | `/smeariom reload` | Re-read the config file from disk |
 | `/smeariom status` | Show current FPS and what's being smoothed |
 
-![Overview](docs/overview.png)
+![Overview](overview.png)
 
-![HUD](docs/hud.png)
+![HUD](hud.png)
 
 ## Building
 
